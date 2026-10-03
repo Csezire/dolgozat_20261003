@@ -1,0 +1,65 @@
+body {
+    padding: 0px;
+    background: black url("../images/black.png"); 
+    background-attachment: fixed;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.tarolo {
+    margin: 0 auto 0 auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+.fejlec {
+    height: 400px;
+}
+
+.menu {
+    margin: 0px;
+    padding: 10px 0px;
+    color: white;
+    background-color: black;
+}
+
+.menu a {
+    padding: 10px 5px;
+    margin: 0px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.menu a:hover {
+    color: orange;
+}
+
+.tartalom {
+    background-color: rgb(220,220,220);
+    color: black;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.tartalom img {
+    float: right;
+    width: 30%;
+}
+
+.tartalom ul {
+    list-style-type: square
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+p {
+    font-size: 10px;
+    text-align: justify
+}
