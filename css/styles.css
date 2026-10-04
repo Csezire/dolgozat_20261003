@@ -13,20 +13,26 @@ body {
 
 .fejlec {
     height: 400px;
+    background-image: url("../images/game.jpg"); 
+    background-size: cover; /*ez kimaradt és az igazítás is beállítva; nem img-ként kellett megadni */
+    background-position: right top; 
 }
 
+
 .menu {
-    margin: 0px;
-    padding: 10px 0px;
-    color: white;
+    margin-left: 0px;
+    /* padding törölve, a menü belső margója a linkeknél van beállítva */
+    /* color törölve, ez egy doboz, nincs szöveges elem */
     background-color: black;
+    overflow: hidden; /*a két gomb egymás mellett jelenik meg */
 }
 
 .menu a {
-    padding: 10px 5px;
+    float: left; /* a két gomb egymás mellett jelenik meg */
+    padding: 10px; /*a vizszintes belső margó 10px lett, 5px helyett */
     margin: 0px;
-    border: 2px solid white;
-    color: white;
+    border-right: 1px solid white; /* a teljes keret helyett csak a jobb oldalon van keret; 2px helyett elég az 1px */
+    color: beige; /* beige a white helyett */
     text-decoration: none;
     font-weight: bold; 
 }
@@ -36,15 +42,16 @@ body {
 }
 
 .tartalom {
-    background-color: rgb(220,220,220);
+    background-color: rgb(211,211,211); /* az eredeti: rgb(220,220,220) */
     color: black;
-    padding: 5px;
+    padding: 10px; /* 10px az 5px helyett */
     overflow: hidden;
 }
 
 .tartalom img {
     float: right;
-    width: 30%;
+    width: 35%;
+    padding: 15px; /* a kép körül legyen belső margó */
 }
 
 .tartalom ul {
@@ -52,14 +59,26 @@ body {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 2em; /* a betűméret 2em a 20px helyett */
 }
 
 h2 {
-    font-size: 15px;
+    font-size: 1.5em; /* a betűméret 1.5em a 15px helyett */
 }
 
 p {
-    font-size: 10px;
+    font-size: 1em; /* a betűméret 1em a 10px helyett */
     text-align: justify
+}
+
+.copyright { /* ami lemaradt */
+    background-color: orange;
+    margin: 0px;
+}
+
+.copyright p {
+    margin: 0px;
+    font-size: 0.9em; /* ami lemaradt */
+    text-align: center;
+    color: black;
 }
